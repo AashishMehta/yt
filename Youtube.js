@@ -72,6 +72,10 @@ function abc(a) {
   // alert()
   console.log(links);
 }
+function delete1(i) {
+  links.splice(i, 1);
+  console.log(links);
+}
 
 /////////////////////// playlist display
 function relod() {
@@ -106,6 +110,10 @@ function relod() {
     channel_title.textContent =
       "CHANNEL TITLE:- " + videos.items[links[i]].snippet.channelTitle;
     div_snippet.appendChild(channel_title);
+     var play = document.createElement("button");
+    play.textContent = "Delete from PlayList";
+    play.setAttribute("onClick", "delete1(" + i + ")");
+    div_snippet.appendChild(play);
 
     body.appendChild(div_snippet);
   }
