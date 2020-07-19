@@ -72,6 +72,7 @@ function abc(a) {
   // alert()
   console.log(links);
 }
+
 function delete1(i) {
   links.splice(i, 1);
   console.log(links);
