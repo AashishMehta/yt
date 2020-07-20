@@ -1,13 +1,13 @@
-var textVal = document.getElementById("text-box");
+// var textVal = document.getElementById("text-box");
 
-var btn = document.getElementById("btn");
+// var btn = document.getElementById("btn");
 
-btn.addEventListener("click", bot);
+// btn.addEventListener("click", bot);
 
-function bot() {
-  localStorage.setItem("textStorage", textVal.value);
-  // console.log(textVal.value);
-}
+// function bot() {
+//   localStorage.setItem("textStorage", textVal.value);
+//   // console.log(textVal.value);
+// }
 
 const text = " ";
 const url =
